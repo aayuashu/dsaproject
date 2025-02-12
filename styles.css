@@ -1,0 +1,198 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://source.unsplash.com/1600x900/?food,restaurant') no-repeat center center/cover;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(255, 76, 76, 0.9); /* Slight transparency */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Header */
+/* header {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://source.unsplash.com/1600x500/?restaurant,dining') no-repeat center center/cover;
+    color: rgb(236, 22, 22);
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+} */
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #ff3b3b, #ff6b6b);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    /* border-bottom-left-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Main Content */
+main {
+    width: 60%;
+    margin: 30px auto;
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    /* border-radius: 10px; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Restaurant List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+li:hover {
+    background: #ebdcdc;
+    transform: translateY(-1px);
+    border-radius: 4px;
+    /* restaurant list hover was this TOT */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* About Page */
+/* section */
+p {
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    background: url('https://source.unsplash.com/1200x400/?chef,kitchen') no-repeat center center/cover;
+    color: rgb(6, 6, 6);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff4c4c;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 76, 76, 0.2);
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Rating Input Field */
+.rating-input {
+    padding: 6px;
+    width: 60px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Update Button */
+.update-btn {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
